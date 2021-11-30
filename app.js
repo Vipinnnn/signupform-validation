@@ -13,13 +13,13 @@ function setError(id,error){
 function validateForm(e){
     let userName = document.forms["myForm"]["uName"].value;
     const email = document.forms["myForm"]["email"].value;
-const password = document.forms["myForm"]["password"].value;
-const rePassword = document.forms["myForm"]["rePassword"].value;
+    const password = document.forms["myForm"]["password"].value;
+    const rePassword = document.forms["myForm"]["rePassword"].value;
     let returnval = true;
     console.log(userName);
   
 if(userName === ""){
-   setError(uNameErr, "Please Enter Valid Username")
+   setError(uNameErr, "Username cannot be empty")
    
     returnval = false;
 }
@@ -34,7 +34,7 @@ if(password.length <6){
     returnval = false;
 }
 if(rePassword !== password){
-    setError(rePasswordErr, "Entered Passwords doesnot match")
+    setError(rePasswordErr, "Entered Passwords do not match")
    
     returnval = false;
 }

@@ -6,13 +6,13 @@
 
 body{
     background: rgb(241,97,238);
-background: -moz-linear-gradient(100deg, rgba(241,97,238,1) 5%, rgba(64,180,236,1) 100%);
-background: -webkit-linear-gradient(100deg, rgba(241,97,238,1) 5%, rgba(64,180,236,1) 100%);
-background: linear-gradient(100deg, rgba(241,97,238,1) 5%, rgba(64,180,236,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f161ee",endColorstr="#40b4ec",GradientType=1);
-display: flex;
-  align-items: center;
-  justify-content: center;
+    background: -moz-linear-gradient(100deg, rgba(241,97,238,1) 5%, rgba(64,180,236,1) 100%);
+    background: -webkit-linear-gradient(100deg, rgba(241,97,238,1) 5%, rgba(64,180,236,1) 100%);
+    background: linear-gradient(100deg, rgba(241,97,238,1) 5%, rgba(64,180,236,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f161ee",endColorstr="#40b4ec",GradientType=1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
@@ -21,11 +21,7 @@ display: flex;
     width: 600px;
     border-radius: 8px;
     padding: 2%;
-    
-    
-    
-    
-
+  
 }
 
 
@@ -41,7 +37,7 @@ input{
     border: none;
     background-color: rgb(235, 231, 231);
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
     height: 25px;
     
     
@@ -59,7 +55,10 @@ h1{
     
 
 }
-
+.btn{
+    display: flex;
+    justify-content: center;
+}
 button{
     
     margin: 5px;
@@ -67,9 +66,12 @@ button{
     border: none;
     color: white;
     background-color: rgb(27, 184, 27);
-    width: 100px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    
 }
 button:hover{
     background-color: greenyellow;
@@ -80,4 +82,15 @@ p{
     font-weight: 200;
     padding: 5px;
     padding-top: 0%;
+}
+
+
+@media (max-width: 600px) {
+input{
+    width: 80%;
+}
+button{
+    width: 100px;
+}
+    
 }
